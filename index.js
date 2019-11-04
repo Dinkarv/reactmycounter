@@ -12,12 +12,27 @@ class App extends Component {
     };
   }
 
+  incCounter = (e) =>{
+    console.log(e.target.name)
+    if(e.target.name == 'one'){
+      let n = this.state.number+1
+      this.setState({
+        number: n
+      })
+    }else{
+      let n = this.state.number+10
+      this.setState({
+        number: n
+      })
+    }
+  }
+
   render() {
     return (
       <div>
         <Hello name={this.state.number} />
         <p>
-          <Form/>
+          <Form inc={this.incCounter}/>
         </p>
       </div>
     );

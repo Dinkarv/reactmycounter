@@ -1,10 +1,10 @@
 import React from 'react';
 
-const incrementNumber = () =>{
+const incrementNumber = (props) =>{
   return(
     <div>
-    <button onClick=''>+1</button>
-    <button onClick=''>+10</button>
+    <button onClick={props.inc} name='one'>+1</button>
+    <button onClick={props.inc} name='ten'>+10</button>
     </div>
   )
 }
