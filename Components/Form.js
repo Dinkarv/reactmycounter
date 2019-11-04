@@ -4,7 +4,7 @@ const incrementNumber = () =>{
   return(
     <div>
     <button onClick=''>+1</button>
-    <input type='Submit' name='2'/>
+    <button onClick=''>+10</button>
     </div>
   )
 }
